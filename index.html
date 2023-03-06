@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel=”stylesheet” href=”style.css”>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
@@ -15,9 +18,148 @@
             <li class="cabecalho-lista-item">Estudante</li>
         </ul>
     </header>
-    <style>header {
-        background-color: #377C4B;
+    <section class="escola">
+        <div class="escola-div-conteudo">
+            <h2 class="escola-titulo">Sobre a escola</h2>
+            <p class="escola-textoum">A escola Alura foi fundada em 2010 com o objetivo de ensinar Pensamento Computacional através da Programação</p>
+            <p class="escola-textodois">A turma mais famosa é a Segunda Série A. Uma turma diversa e engajada, as vezes, um pouco bagunceira, mas que entrega excelentes resultados!</p>
+        </div>
+        <img class="escola-imagem" src="pcs.png" alt="mexendo no pc">
+    </section>
+    <section class="estudante">
+        <h2 class="estudante-titulo">Quem são nossos estudantes?</h2>
+        <div class="estudantes-todos">
+            <span></span>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="aluna.png" alt="aluno">
+            <h3 class="estudante-nome">Sheila</h3>
+            <a href="https://twitter.com/artmersz"><img class="estudante-icone" src="twitter.png" alt="twitter"></a>
+            <a href="https://github.com/4icitel"><img class="estudante-icone" src="github.png" alt="github"></a>
+            <a href="https://www.instagram.com/artmersz/"><img class="estudante-icone" src="instagram.png" alt="instagram"></a>
+        </div> 
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="aluna.png" alt="aluno">
+            <h3 class="estudante-nome">Ana Escura</h3>
+            <a href="https://twitter.com/artmersz"><img class="estudante-icone" src="twitter.png" alt="twitter"></a>
+            <a href="https://github.com/4icitel"><img class="estudante-icone" src="github.png" alt="github"></a>
+            <a href="https://www.instagram.com/artmersz/"><img class="estudante-icone" src="instagram.png" alt="instagram"></a>
+        </div> 
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="aluna.png" alt="aluno">
+            <h3 class="estudante-nome">Morty</h3>
+            <a href="https://twitter.com/artmersz"><img class="estudante-icone" src="twitter.png" alt="twitter"></a>
+            <a href="https://github.com/4icitel"><img class="estudante-icone" src="github.png" alt="github"></a>
+            <a href="https://www.instagram.com/artmersz/"><img class="estudante-icone" src="instagram.png" alt="instagram"></a>
+        </div> 
+        <span></span>
+        <span></span>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="aluna.png" alt="aluno">
+            <h3 class="estudante-nome">Marceline</h3>
+            <a href="https://twitter.com/artmersz"><img class="estudante-icone" src="twitter.png" alt="twitter"></a>
+            <a href="https://github.com/4icitel"><img class="estudante-icone" src="github.png" alt="github"></a>
+            <a href="https://www.instagram.com/artmersz/"><img class="estudante-icone" src="instagram.png" alt="instagram"></a>
+        </div> 
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="aluna.png" alt="aluno">
+            <h3 class="estudante-nome">RIck Jaimes</h3>
+            <a href="https://twitter.com/artmersz"><img class="estudante-icone" src="twitter.png" alt="twitter"></a>
+            <a href="https://github.com/4icitel"><img class="estudante-icone" src="github.png" alt="github"></a>
+            <a href="https://www.instagram.com/artmersz/"><img class="estudante-icone" src="instagram.png" alt="instagram"></a>
+        </div> 
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="aluna.png" alt="aluno">
+            <h3 class="estudante-nome">Carlao</h3>
+            <a href="https://twitter.com/artmersz"><img class="estudante-icone" src="twitter.png" alt="twitter"></a>
+            <a href="https://github.com/4icitel"><img class="estudante-icone" src="github.png" alt="github"></a>
+            <a href="https://www.instagram.com/artmersz/"><img class="estudante-icone" src="instagram.png" alt="instagram"></a>
+        </div> 
+        </div>  
+    </section>
+    <footer class="rodape">
+        <img class="rodape-imagem" src="alura.png" alt="logo da alura">
+    </footer>
+    <style> *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .cabecalho {
+        background-color: #121814;
         color: white;
-        }</style>
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 0;
+    }
+
+    .cabecalho-imagem{
+        width: 10%;
+    }
+
+    .cabecalho-lista-item {
+        margin: 0 16px;
+        display: inline-block
+    }
+
+    .escola-imagem{
+    width: 25%;
+    }
+
+    .escola{
+        background-image: linear-gradient(#121814,#7d7e7d);
+        color: white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .escola-div-conteudo{
+        width: 35%;
+    }
+
+    .escola-titulo{
+        padding: 24px 0;
+    }
+
+    .estudante-imagem{
+        width: 120px;
+    }
+
+    .estudante-icone{
+        width: 24px;
+    }
+
+    .estudante-div{
+        text-align: center;
+    }
+
+    .estudante-titulo{
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .estudantes-todos{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .rodape{
+        background-color: black;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .rodape-imagem{
+    height: 70px;
+    padding: 12px 0;
+    width: 10%;
+    }
+        </style>
 </body>
 </html>
